@@ -46,8 +46,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      #emoji_index: !!python/name:materialx.emoji.twemoji
+      #emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.keys
 
 extra_javascript:
@@ -62,7 +62,7 @@ extra_javascript:
 extra_css:
   - assets/css/tables.css
 
-# Repository referencia
+# Repository base
 #repo_name: omadson/project-template
 #repo_url: https://github.com/omadson/project-template
 repo_name: marcelloale/devopsufc

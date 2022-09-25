@@ -15,7 +15,7 @@ O projeto visa a ambientação dos alunos ingressantes e a redução da evasão.
 
 ## Organização do site
 
-    boas_vindas    # Está pagina sobre o projeto.
+    boas_vindas    # Pagina sobre o projeto.
     conteudos/
         slide_assunto  # Slides apresentados nos encontros.
         rascunho       # Rascunho da pesquisa para realizar os encontros 
