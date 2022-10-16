@@ -1,4 +1,11 @@
+# Informações
 site_name: DevOps UFC Quixadá
+site_url: https://marcelloale.github.io/devopsufc/
+site_author: Marcello Alexandre
+site_description: >-
+  Um site estático para compartilhamento de arquivos utilizados no grupo de estudos ufc quixada, hospedado no gh-pages.
+
+# Plugins
 plugins:
   - mkdocs-jupyter
   - search
@@ -12,21 +19,22 @@ plugins:
       zoomable: true
       draggable: true
 
+# Configuração
 theme:
   name: material
   icon:
     repo: fontawesome/brands/github
-    logo: fontawesome/solid/database
+    logo: fontawesome/solid/infinity
   palette:
     - scheme: default
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/lightbulb
         name: Switch to dark mode
     - scheme: slate
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
