@@ -5,6 +5,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Um site estático para compartilhamento de arquivos utilizados no grupo de estudos ufc quixada, hospedado no gh-pages." name="description"/>
+<meta content="Marcello Alexandre" name="author"/>
+<link href="https://marcelloale.github.io/devopsufc/" rel="canonical"/>
 <link href="assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.1, mkdocs-material-8.5.3" name="generator"/>
 <title>DevOps UFC Quixadá</title>
@@ -16,13 +19,13 @@
 <link href="assets/css/tables.css" rel="stylesheet"/>
 <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="assets/javascripts/glightbox.min.js"></script></head>
-<body data-md-color-accent="teal" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#bem-vindo-ao-nosso-repositorio-de-estudos">
+<a class="md-skip" href="#_1">
           Skip to content
         </a>
 </div>
@@ -31,7 +34,7 @@
 <header class="md-header md-header--lifted" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="DevOps UFC Quixadá" class="md-header__button md-logo" data-md-component="logo" href="." title="DevOps UFC Quixadá">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80zm-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432v-85.9z"></path></svg>
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5l72.3 72.2 72.2-72.2C419.5 111.3 456.4 96 494.9 96 575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2c-27.3 27.2-64.2 42.5-102.7 42.5C65 416 0 351 0 270.9v-29.8zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8-44.8 0-81.1 36.3-81.1 81.1v29.7c0 44.8 36.3 81.1 81.1 81.1 21.5 0 42.2-8.5 57.4-23.8l72.2-72.1zm90.5 0 72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8 44.8 0 81.1-36.3 81.1-81.1v-29.8c0-44.8-36.3-81.1-81.1-81.1-21.5 0-42.2 8.5-57.4 23.8L365.3 256z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -46,18 +49,18 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Bem vindo ao nosso Repositorio de Estudos
+              Home
             
           </span>
 </div>
 </div>
 </div>
 <form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="teal" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"></path></svg>
 </label>
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="teal" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"></path></svg>
 </label>
@@ -108,7 +111,7 @@
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
 <a class="md-tabs__link md-tabs__link--active" href=".">
-      Bem vindo ao nosso Repositorio de Estudos
+      Home
     </a>
 </li>
 <li class="md-tabs__item">
@@ -129,7 +132,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="DevOps UFC Quixadá" class="md-nav__button md-logo" data-md-component="logo" href="." title="DevOps UFC Quixadá">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80zm-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432v-85.9z"></path></svg>
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5l72.3 72.2 72.2-72.2C419.5 111.3 456.4 96 494.9 96 575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2c-27.3 27.2-64.2 42.5-102.7 42.5C65 416 0 351 0 270.9v-29.8zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8-44.8 0-81.1 36.3-81.1 81.1v29.7c0 44.8 36.3 81.1 81.1 81.1 21.5 0 42.2-8.5 57.4-23.8l72.2-72.1zm90.5 0 72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8 44.8 0 81.1-36.3 81.1-81.1v-29.8c0-44.8-36.3-81.1-81.1-81.1-21.5 0-42.2 8.5-57.4 23.8L365.3 256z"></path></svg>
 </a>
     DevOps UFC Quixadá
   </label>
@@ -146,31 +149,9 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Bem vindo ao nosso Repositorio de Estudos
-          <span class="md-nav__icon md-icon"></span>
-</label>
 <a class="md-nav__link md-nav__link--active" href=".">
-        Bem vindo ao nosso Repositorio de Estudos
+        Home
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sobre-o-grupo-de-estudos">
-    Sobre o grupo de estudos
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#organizacao-do-site">
-    Organização do site
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
@@ -246,22 +227,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#sobre-o-grupo-de-estudos">
-    Sobre o grupo de estudos
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#organizacao-do-site">
-    Organização do site
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -271,21 +236,23 @@
 <a class="md-content__button md-icon" href="https://github.com/marcelloale/devopsufc/edit/master/docs/index.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
+<h1 id="_1"></h1>
 <h1 id="bem-vindo-ao-nosso-repositorio-de-estudos">Bem vindo ao nosso Repositorio de Estudos</h1>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/marcelloale/marcelloale.github.io/main/arquivos/img/logo2.png"><img align="center" alt="logo" src="https://raw.githubusercontent.com/marcelloale/marcelloale.github.io/main/arquivos/img/logo2.png"/></a></p>
 <p>Nossos encontros são realizados no <a href="https://www.quixada.ufc.br">Campus de Quixadá UFC</a>.</p>
 <h2 id="sobre-o-grupo-de-estudos">Sobre o grupo de estudos</h2>
 <p>Uma iniciativa do projeto Difusão e implementação de novas tecnologias em ambientes DEVOPS promovido pela Universidade Federal do Ceará (UFC) através do Programa de Acolhimento e Incentivo a Permanência no curso de Redes de Computadores.
 O projeto visa a ambientação dos alunos ingressantes e a redução da evasão.</p>
 <ul>
 <li><code>engajamento dos alunos</code> - Comunidade de Estudo.</li>
-<li><code>mercado</code> - Entender o que está sendo usado no mercado de trabalho.</li>
+<li><code>visão do mercado</code> - Entender o que está sendo usado no mercado de trabalho.</li>
 <li><code>novas tecnologias</code> - Apresentações de ferramentas.</li>
 <li><code>treinamento básico</code> - Visão basica do funcionamento.</li>
 <li><code>Cursos, livros etc</code> - Direncionamento de conteudo. </li>
 </ul>
 <h2 id="organizacao-do-site">Organização do site</h2>
-<pre><code>boas_vindas    # Pagina sobre o projeto.
-conteudos/
+<pre><code>boas_vindas    # Pagina Inicial sobre o projeto.
+conteúdos/     # Pagina  de listagem dos conteudos.
     slide_assunto  # Slides apresentados nos encontros.
     rascunho       # Rascunho da pesquisa para realizar os encontros 
     ...       # Outros arquivos relacionados.
