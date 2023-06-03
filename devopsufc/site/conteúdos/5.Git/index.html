@@ -5,6 +5,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Um site estático para compartilhamento de arquivos utilizados no grupo de estudos ufc quixada, hospedado no gh-pages." name="description"/>
+<meta content="Marcello Alexandre" name="author"/>
+<link href="https://marcelloale.github.io/devopsufc/conte%C3%BAdos/5.Git/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.1, mkdocs-material-8.5.3" name="generator"/>
 <title>Git e GitHub (Versionamento) - DevOps UFC Quixadá</title>
@@ -16,7 +19,7 @@
 <link href="../../assets/css/tables.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
-<body data-md-color-accent="teal" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -31,7 +34,7 @@
 <header class="md-header md-header--lifted" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="DevOps UFC Quixadá" class="md-header__button md-logo" data-md-component="logo" href="../.." title="DevOps UFC Quixadá">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80zm-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432v-85.9z"></path></svg>
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5l72.3 72.2 72.2-72.2C419.5 111.3 456.4 96 494.9 96 575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2c-27.3 27.2-64.2 42.5-102.7 42.5C65 416 0 351 0 270.9v-29.8zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8-44.8 0-81.1 36.3-81.1 81.1v29.7c0 44.8 36.3 81.1 81.1 81.1 21.5 0 42.2-8.5 57.4-23.8l72.2-72.1zm90.5 0 72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8 44.8 0 81.1-36.3 81.1-81.1v-29.8c0-44.8-36.3-81.1-81.1-81.1-21.5 0-42.2 8.5-57.4 23.8L365.3 256z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -53,11 +56,11 @@
 </div>
 </div>
 <form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="teal" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"></path></svg>
 </label>
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="teal" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"></path></svg>
 </label>
@@ -108,7 +111,7 @@
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../..">
-      Bem vindo ao nosso Repositorio de Estudos
+      Home
     </a>
 </li>
 <li class="md-tabs__item">
@@ -129,7 +132,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="DevOps UFC Quixadá" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="DevOps UFC Quixadá">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0s224 35.8 224 80zm-54.8 134.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432v-85.9z"></path></svg>
+<svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M0 241.1C0 161 65 96 145.1 96c38.5 0 75.4 15.3 102.6 42.5l72.3 72.2 72.2-72.2C419.5 111.3 456.4 96 494.9 96 575 96 640 161 640 241.1v29.7C640 351 575 416 494.9 416c-38.5 0-75.4-15.3-102.6-42.5L320 301.3l-72.2 72.2c-27.3 27.2-64.2 42.5-102.7 42.5C65 416 0 351 0 270.9v-29.8zM274.7 256l-72.2-72.2c-15.2-15.2-35.9-23.8-57.4-23.8-44.8 0-81.1 36.3-81.1 81.1v29.7c0 44.8 36.3 81.1 81.1 81.1 21.5 0 42.2-8.5 57.4-23.8l72.2-72.1zm90.5 0 72.2 72.2c15.2 15.2 35.9 23.8 57.4 23.8 44.8 0 81.1-36.3 81.1-81.1v-29.8c0-44.8-36.3-81.1-81.1-81.1-21.5 0-42.2 8.5-57.4 23.8L365.3 256z"></path></svg>
 </a>
     DevOps UFC Quixadá
   </label>
@@ -146,7 +149,7 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../..">
-        Bem vindo ao nosso Repositorio de Estudos
+        Home
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -279,6 +282,99 @@
 <li>Uma apresentação sobre Git e GitHub
 Marcello Alexandre - Curso de Redes de Computadores</li>
 </ol>
+<p>2.
+O que é git?</p>
+<p>Se vocês já trabalharam em grupo sabem o quanto é complicado e até frustante compartilhar arquivos ainda mais quando se tem alterações constantes.
+Como solução para isso foram desenvolvidos os revisions controls , version control ou simplesmente, controle de versão.</p>
+<p>O maior benefício de um controle de versão com certeza é a possibilidade de várias pessoas trabalharem em paralelo em um mesmo projeto sem precisar ficar enviando suas alterações para cada membro do time, se beneficiando desta excelente ferramenta para manter cópias de seus fontes, documentos, imagens e etc.</p>
+<p>3.
+Como Toy Story 2 quase foi deletado para sempre por causa de um comando lá em 1998 um funcionario deu o seguinte comando rm -r -f * no sistema de arquivos assim deletando completamento o filme tentaram restaurar com backup mas falhou porem um supervisora do filme que estava gravida trabalhando em homeoffice possuia uma copia para trabalhar em seu escritorio assim sendo possivel salvar boa parte do trabalho.</p>
+<p>4.
+Controle de versão é um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que você possa lembrar versões específicas mais tarde.
+O controle de versão oferece a possibilidade de reverter alterações realizadas se alguma coisa de ruim acontecer (sabemos que essa possibilidade é muito grande).
+Bem aqui a gente tem as logos de alguns dos principais controles de versão (SVN, Git e Mercurial) populares por serem as soluções livres.
+Essas soluções junto com algumas ferramentas fazem com que os controles de versão tornar-se um pouco mais fácil.</p>
+<p>5.
+O SVN, ou Subversion , foi fundado em 2000 pela CollabNet, Incorporado sob a Licença Apache. O SVN é distribuído como código aberto e seu modelo utiliza um sistema de controle de versão centralizado, o que significa que todas as informações e arquivos são armazenados em um servidor central.
+Vinha pra ser o substituto do CVS(Concurrent Version System) ja foi um dos controle de versão com a maior adoção no mercado, vários projetos open-source usaram o subversion como repositório, dentre eles o Apache, Python, o Google Code tambem usa o Subversion exclusivamente para distribuir código e outros. porem sua ultima versão ja tem mais de 6 anos.
+Ele era bastante popular existindo diversos clients disponíveis, geralmente para os usuários de windows, o TortoiseSVN era o client mais recomendado, para os usuários de Mac o Version era a melhor opção.</p>
+<p>6.
+Criado em 2005 por Linus Torvalds, o Git foi projetado para manter o desenvolvimento do Kernel Linux, e hoje é largamente utilizado pela comunidade de desenvolvedores, o Git oferece um controle de versão diferente, o Distributed Version Control, ou simplesmente, controle de versão distribuído, com esta forma de controle não existe um servidor central como no SVN por exemplo, que usa versão centralizada, o git é um controle de versão distribuído com foco na velocidade. 
+O que ajudou a difusão foi a plataforma GitHub que vamos falar mais na frente.
+No site do git na sessão de livro(book) você pode encontrar o livro 'Pro Git' totalmente de graça e em portugues que explica tudo sobre o git escrito por Scott Chacon e Ben Straub link na referencia 'Começando-Sobre-Controle-de-Versão'</p>
+<p>7.
+O Mercurial é outro controle de versão distribuído assim como o Git, ele foi desenvolvido por Matt Mackall em 2005 para projetos de grande porte, muito além dos projetos simples de designers e desenvolvedores independentes, obviamente isso não significa que times pequenos não possam utilizá-lo, o Mercurial é extremamente rápido e os criadores focaram na performance como recurso mais importante.</p>
+<p>Além de ser muito rápido e escalável, o Mercurial é mais simples que o Git, não existem tantas funções para aprender e as funções são similares a outros CVS’s, além de ele vir equipado com uma interface web e ter uma excelente documentação.
+Foi implementado principalmente em python para rodar sobre linux sendo principalmente um programa de linha de comando mas hoje esta disponíveis em todas as principais plataformas e as funcionalidades do Mercurial pode ser aumentada com extensões oficiais ou da comunidade.
+SCM(source control management, Gerenciamento de código-fonte) usado para gerenciar o código fonte do Python, tambem é um software livre licenciado pela GNUGPLv2 tendo seus semelhantes o Git e o Bazaar. 
+O projeto do Mercurial foi iniciado na mesma epoca do Git com o objetivo de ser um substituto para o software de controle de revisão BitKeeper.</p>
+<p>8.
+GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+O GitHub é muito popular atualmente hospeda mais de 100 milhões de repositórios, com a maior parte deles sendo projetos de código aberto.
+É amplamente usado por diversas empresas, sendo um dos clientes de Git GUI mais populares.
+Pode ver no site do git na aba downloads/guis
+GitHub é um serviço baseado em nuvem e que incorpora os recursos de controle de versão do Git, mas tambem é famosa na comunidade de programadores como uma especie de rede social voltada a profissionais de TI nela você pode seguir e aprender com outros programadores  mais experientes gerando conexões riquissimas para estudantes, registrar projetos pessoais como uma especie de portfolio online.</p>
+<p>Foi criado em  2007 por Chris Wanstrath, J. Hyett, Tom Preston-Werner e Scott Chacon porem foi vendido em 2018 para Microsoft por US$ 7,5 Bilhões.</p>
+<p>9.
+GitHub Copilot
+O Copiloto GitHub é uma ferramenta de Inteligência artificial desenvolvida pela open.ai e o github que tens como objetivo de criar linhas de código automáticos ou através de comentários, O GitHub Copilot está disponível como uma extensão para Neovim, JetBrains e Visual Studio Code. e tem suporte a milhares de linguagens como: Python, JavaScript, TypeScript, Ruby, Java e Go, mas entende dezenas de linguagens e pode ajudá-lo a encontrar o caminho para quase tudo
+GitHub Pages
+Um serviço de hospedagem de site estático usuario.io</p>
+<p>GitHub é apenas um dos mais populares serviços de repositorios eles tem ferramentas pagas e planos para geram sua renda e assim como qualquer serviçõs existe seus concorrentes outros como GitLab, BitBucket, SourceForge etc.</p>
+<p>10.</p>
+<p>Como utilizar o GitHub</p>
+<p>Para utilizar o GitHub é necessário criar uma conta pessoal ou uma conta de equipe.
+O proprio github tem um tutorial bem basico para mostra o seu ambiento criando como exemplo sua primeira interação.</p>
+<p>11.
+-Repositorio
+Repositório, ou repo, é um diretório onde os arquivos do seu projeto ficam armazenados, você pode armazenar códigos, imagens, áudios, ou qualquer outra coisa relacionada ao projeto no diretório.</p>
+<p>12.
+-Branch
+Um branch é uma cópia de um repositório. Você pode utilizá-lo para desenvolver o seu projeto individualmente, sem alterar o diretório original. Assim, só depois de finalizado, será combinado novamente com o repositório original.
+Ao criar branches, ou ramificações, você gera versões diferentes de um repositório. Quando você modifica o projeto nas branches de recursos, um desenvolvedor pode ver como isso vai afetar o projeto principal na hora que tudo for integrado.</p>
+<p>13.
+-Pull e Push
+-Commits
+Os Commits é como as mudanças salvas no GitHub são chamadas. Cada vez que você muda o arquivo do branch de recurso, você terá que executar um Commit para mantê-lo.</p>
+<p>-pull request
+Para propor as mudanças que você acabou de fazer para outros desenvolvedores trabalhando no mesmo projeto, você deve criar um pull request. Pull Requests permitem que você veja as diferenças entre o projeto original e o seu branch de recurso. É assim que você pede para os seus pares revisá-las. Se os outros desenvolvedores aprovarem as modificações, eles podem executar um merge pull request (solicitação de mesclagem). Isso irá aplicar as mudanças para o projeto principal.</p>
+<p>14.</p>
+<p>-Merge
+Para unir as modificações feitas em um branch ao código original, utilizamos o comando merge. Com esta funcionalidade, todas as alterações feitas em cópias manipuláveis são inseridas, após aprovadas, no código-fonte original sem complicações.</p>
+<p>15.</p>
+<p>-Conteudos em videos</p>
+<p>O willian justen liberou os videos dos cursos dele que eram pagos na udemy agora no youtube e de graça.
+Willian Justen Cursos - playlists dos cursos 
+https://www.youtube.com/c/WillianJustenCursos
+Git e Github para Iniciantes - 30 videos curtos
+https://www.youtube.com/playlist?list=PLlAbYrWSYTiPA2iEiQ2PF_A9j__C4hi0A
+Git e Github na Vida Real - 45 videos curtos de no maximo 9min de duração
+https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg</p>
+<p>Canal da Rafaella Ballerini ela tem varios videos relacionado ao github, sobre o que é, como costumir perfil pra portifolio etc
+https://www.youtube.com/c/rafaellaballerini</p>
+<p>Curso em video - Gustavo Guanabara
+https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA</p>
+<p>DevSuperior - Nelio Alves
+https://www.youtube.com/watch?v=_hZf1teRFNg</p>
+<p>-Sites</p>
+<p>Criado por Peter Cottle O LearnGitBranching é um visualizador de repositório git, sandbox e uma série de tutoriais e desafios educacionais. Seu objetivo principal é ajudar os desenvolvedores a entender o git através do poder da visualização (algo que está ausente ao trabalhar na linha de comando). Isso é conseguido através de um jogo com diferentes níveis para se familiarizar com os diferentes comandos do git.
+link do repositorio no github:
+https://github.com/pcottle/learnGitBranching
+link do jogo:
+https://pcottle.github.io/learnGitBranching/</p>
+<p>referencias:
+https://blog.vandersonguidi.com.br/utilidade-publica/qual-o-melhor-controle-de-versao-subversiongitmercurial/</p>
+<p>https://www.gitkraken.com/blog/git-vs-svn</p>
+<p>https://www.independent.co.uk/arts-entertainment/films/news/lightyear-toy-story-2-deleted-b2017238.html</p>
+<p>https://git-scm.com/</p>
+<p>https://git-scm.com/book/pt-br/v2/Começando-Sobre-Controle-de-Versão</p>
+<p>https://www.mercurial-scm.org/guide</p>
+<p>https://subversion.apache.org/</p>
+<p>https://www.hostinger.com.br/tutoriais/o-que-github</p>
+<p>https://rockcontent.com/br/blog/o-que-e-github/</p>
+<p>https://kenzie.com.br/blog/o-que-e-git/</p>
+<p>https://www.youtube.com/c/WillianJustenCursos</p>
+<p>https://osprogramadores.com/desafios/d01/</p>
 </article>
 </div>
 </div>
